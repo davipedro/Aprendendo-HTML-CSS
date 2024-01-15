@@ -30,6 +30,8 @@ para os elementos do cabeçalho, como cor de fundo, cor da fonte, fonte, etc.
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align:center;
 }
 
 .container{
@@ -45,11 +47,13 @@ para os elementos do cabeçalho, como cor de fundo, cor da fonte, fonte, etc.
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario{
     background-color: transparent;
     border: 2px double var(--branco-principal);
+    margin: 1em 0 2em 0;
 }
 
 .container__aviso{
@@ -60,4 +64,44 @@ para os elementos do cabeçalho, como cor de fundo, cor da fonte, fonte, etc.
 .container__titulo{
     font-size: 28px;
     font-weight: 700;
+}
+
+/*
+margin (margem), ordem: cima, direita, baixo, esquerda
+*/
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario_imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
 }
